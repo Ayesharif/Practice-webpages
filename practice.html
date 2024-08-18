@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+display: flex;
+
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+background-color: antiquewhite;
+/* "nav nav nav" */
+
+/* column-gap: 50px; */
+}
+.title{
+    grid-area: nav;
+    margin: 30px;
+}
+.navul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+}
+.navli{
+    text-decoration: none; 
+    margin: 40px;
+    margin-left: clamp(10px, 20px, 30px);
+}
+.nav{
+    grid-area: nav;
+    margin-left: clamp(10px, 20PX, 500px);
+}
+
+    </style>
+
+</head>
+<body>
+<header>
+    <div class="title"><h1>Title</h1></div>
+    <nav class="nav">
+<ul class="navul">
+    <li class="navli">Home</li>
+    <li class="navli">About</li>
+    <li class="navli">Contact</li>
+    <li class="navli">Search</li>
+
+</ul>
+    </nav>
+</header>
+    
+</body>
+</html>
